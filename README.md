@@ -57,11 +57,11 @@ Two honest caveats on the loss rate. It correlates −0.83 with possession share
 
 ## Finding 3: some sides hold the ball and never arrive
 
-Possession predicts box entry, but only loosely — about two thirds of it. The leftover third is where clubs genuinely differ.
+Possession predicts box entry, but only loosely about two thirds of it. The leftover third is where clubs genuinely differ.
 
 ![Possession share against box entry, clubs at each extreme labelled](figures/sterile_possession.png)
 
-Take Fulham in 2018–19. They had 48.8% of the ball, and a side with that much possession normally reaches the opposition box about **22 times** a match. Fulham reached it **15.6** times. They were getting the ball and not doing anything with it.
+Take Fulham in 2018–19. They had 48.8% of the ball, and a side with that much possession normally reaches the opposition box about **22 times** a match. Fulham reached it **15.6** times. They were getting the ball but cannot reach the box that effectively.
 
 Call that shortfall the **box-entry gap**. It's a persistent trait rather than a one-season blip: 45% of the variation in it is a club characteristic, and a club's gap correlates **r = 0.69** with its own gap the following season.
 
@@ -80,7 +80,7 @@ That's testable. **168 of these player-seasons are players who changed Premier L
 
 **What a player does travels. What it produced does not.**
 
-Touches in the final third carry across a move at **r = 0.71**. Progressive passes received, 0.63. Expected goals plus assists — the number headlining every scouting summary — carries at **0.26**.
+Touches in the final third carry across a move at **r = 0.71**. Progressive passes received, 0.63. Expected goals plus assists carries at **0.26**.
 
 Take-on success rate finishes last at 0.18, closing a loop with Finding 1: dribbling explained the least about chance creation, and it's also the least repeatable thing a player carries.
 
@@ -94,7 +94,7 @@ Take-on success rate finishes last at 0.18, closing a loop with Finding 1: dribb
 4. **Opponent adjustment.** These are season aggregates. A side that piles up box entries against weak opponents looks identical to one that spreads them evenly.
 5. **Split creating from finishing.** xG+xAG merges a player's own shooting with the chances he makes for others. The transfer result already hints they behave differently.
 
-A caution on all of it: none of this is causal. Telling a squad to take more touches in the box isn't a tactic, it's a restatement of the objective. What this supports is **measurement** — box entry is worth tracking, possession share mostly isn't — not a prescription for how to get there.
+A caution on all of it: none of this is causal. Telling a squad to take more touches in the box isn't a tactic, it's a restatement of the objective. What this supports is a **measurement** that box entry is worth tracking, but not a prescription for how to get there.
 
 <details>
 <summary><b>Data, method, and one number that depends entirely on a preprocessing choice</b></summary>
@@ -117,9 +117,7 @@ The transfer analysis takes players with at least five full matches in consecuti
 
 ## Where this started
 
-A cross-validation study of how possession metrics relate to offensive output. Its methodology is what made going further possible: it set the target, assembled the eight seasons, and validated properly rather than reporting a single fit. Its classifier reproduces closely here, 0.875 against the reported 0.866.
-
-It left two threads hanging, and both became sections above: the player-level R² was reported without a minutes threshold, and the squad work established that possession metrics predict output without asking *which ones*, or whether the full suite beats the obvious single variable. The original report is in `original-project/`.
+A cross-validation study of how possession metrics relate to offensive output. Its methodology is what made going further possible, which is setting the target, assembling the eight seasons, and validating properly rather than reporting a single fit. However, it left two threads hanging, and both became sections above: the player-level R² was reported without a minutes threshold, and the squad work established that possession metrics predict output without asking *which ones*, or whether the full suite beats the obvious single variable. The original report is in `original-project/`.
 
 ## Running it
 
@@ -127,7 +125,3 @@ It left two threads hanging, and both became sections above: the player-level R�
 pip install -r requirements.txt
 python3 possession_analysis.py
 ```
-
-Prints every number quoted above and regenerates all six figures from the committed data.
-
-Solo project from my master's at USC.
