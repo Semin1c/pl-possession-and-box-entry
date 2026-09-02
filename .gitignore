@@ -1,0 +1,17 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Notes:
+# - Data IS committed (small, public) so the repo runs out-of-the-box.
+# - Generated figures ARE committed so results are browsable without running the code.
+
+# Source paper and superseded working files stay on disk but out of the repo.
+archive/
