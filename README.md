@@ -57,11 +57,11 @@ Two honest caveats on the loss rate. It correlates −0.83 with possession share
 
 ## Finding 3: some sides hold the ball and never arrive
 
-Possession predicts box entry, but only loosely about two thirds of it. The leftover third is where clubs genuinely differ.
+Possession predicts box entry, but only loosely: about two thirds of it. The leftover third is where clubs genuinely differ.
 
 ![Possession share against box entry, clubs at each extreme labelled](figures/sterile_possession.png)
 
-Take Fulham in 2018–19. They had 48.8% of the ball, and a side with that much possession normally reaches the opposition box about **22 times** a match. Fulham reached it **15.6** times. They were getting the ball but cannot reach the box that effectively.
+Take Fulham in 2018–19. They had 48.8% of the ball, and a side with that much possession normally reaches the opposition box about **22 times** a match. Fulham reached it **15.6** times. They were getting the ball but not turning it into anything.
 
 Call that shortfall the **box-entry gap**. It's a persistent trait rather than a one-season blip: 45% of the variation in it is a club characteristic, and a club's gap correlates **r = 0.69** with its own gap the following season.
 
@@ -94,7 +94,7 @@ Take-on success rate finishes last at 0.18, closing a loop with Finding 1: dribb
 4. **Opponent adjustment.** These are season aggregates. A side that piles up box entries against weak opponents looks identical to one that spreads them evenly.
 5. **Split creating from finishing.** xG+xAG merges a player's own shooting with the chances he makes for others. The transfer result already hints they behave differently.
 
-A caution on all of it: none of this is causal. Telling a squad to take more touches in the box isn't a tactic, it's a restatement of the objective. What this supports is a **measurement** that box entry is worth tracking, but not a prescription for how to get there.
+A caution on all of it: none of this is causal. Telling a squad to take more touches in the box isn't a tactic, it's a restatement of the objective. What this supports is **measurement**: box entry is worth tracking, possession share mostly isn't. It is not a prescription for how to get there.
 
 <details>
 <summary><b>Data, method, and one number that depends entirely on a preprocessing choice</b></summary>
